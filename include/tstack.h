@@ -14,7 +14,7 @@ class TStack {
   int getSize() const { return top+1; }
   bool isEmpty() const { return top == -1; }
   void push(const T& item) {
-    if (top < size - 1)
+    if (top < kSize - 1)
       arr[++top] = item;
     else
       throw "Full stack";
