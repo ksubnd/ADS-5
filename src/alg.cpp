@@ -44,8 +44,8 @@ std::string infx2pstfx(const std::string& inf) {
         stack1.push(inf[i]);
       } else {
         while (!stack1.isEmpty() &&
-			stack1.get() != '('
-			&& checkPr(inf[i]) <= checkPr(stack1.get())) {
+          stack1.get() != '('
+          && checkPr(inf[i]) <= checkPr(stack1.get())) {
           res += stack1.get();
           res += ' ';
           stack1.pop();
