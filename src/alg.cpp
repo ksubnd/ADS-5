@@ -56,7 +56,8 @@ std::string infx2pstfx(const std::string& inf) {
   }
   while (!stack1.isEmpty()) {
     res += stack1.get();
-    res += ' ';
+    if (stack1.getSize() != 1)
+      res += ' ';
     stack1.pop();
   }
   return res;
