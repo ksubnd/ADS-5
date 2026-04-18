@@ -19,7 +19,7 @@ int checkPr(const char ch) {
 
 std::string infx2pstfx(const std::string& inf) {
   TStack<char, 100> stack1;
-  int i = 0, j = 0;
+  int i = 0;
   std::string res;
   while (i < inf.length()) {
     if (inf[i] >= '0' && inf[i] <= '9') {
